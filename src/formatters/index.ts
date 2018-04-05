@@ -34,8 +34,8 @@ export default formatterFactory;
 */
 
 import 'reflect-metadata';
-import {IFormatters, culture, country} from './contract';
-import {isTargetFormatter, getFormatterInterface} from './base';
+import {IFormatters} from './contract';
+import {isTargetFormatter, getFormatterInterface, culture, country} from './base';
 import * as f from './impl';
 
 export type IFactory<T> = {

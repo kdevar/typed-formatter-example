@@ -1,5 +1,5 @@
-import {PropertyNameFormatter, PropertyNameData, culture, country} from "../contract";
-import {formatter, BaseFormatter} from '../base';
+import {PropertyNameFormatter, PropertyNameData} from "../contract";
+import {formatter, BaseFormatter, culture, country} from '../base';
 
 
 @formatter("PropertyNameFormatter", "CA")

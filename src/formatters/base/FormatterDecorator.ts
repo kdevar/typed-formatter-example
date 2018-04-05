@@ -1,4 +1,5 @@
-import {IFormatters, country} from '../contract';
+import {IFormatters} from '../contract';
+import {country} from './BaseFormatter';
 
 export const formatterNameMetadataKeyName = "formatterName";
 export const formatterNameMetadataCountryName = "formatterCountry";

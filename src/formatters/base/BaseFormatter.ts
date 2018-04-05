@@ -1,5 +1,6 @@
-import {culture, country} from '../contract';
-export default class BaseFormatter{
+export type culture = 'en-US' | 'en-CA' | 'en-GB';
+export type country = "US" | "CA" | "GB";
+export class BaseFormatter{
     _culture:culture;
     _country:country;
     constructor(culture:culture, country:country){
