@@ -1,4 +1,4 @@
-export type PropertyNameData = {
+export interface PropertyNameData {
     propertyName?: string;
     propertyGroupName?: string;
 }
