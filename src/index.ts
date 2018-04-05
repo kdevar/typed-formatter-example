@@ -2,7 +2,7 @@ import FormatterFactory from "./formatters";
 import chalk from 'chalk';
 
 
-let propertyNameUSFormat = FormatterFactory.PropertyNameFormatter("en-CA", "US").format({
+let propertyNameUSFormat = FormatterFactory.PropertyNameFormatter("en-US", "US").format({
     propertyGroupName: "test",
     propertyName: "super"
 });
