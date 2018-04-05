@@ -1,11 +1,13 @@
-import {PropertyNameFormatter, PropertyNameData} from "../contract";
-import {formatter} from '../base';
+import {PropertyNameFormatter, PropertyNameData, culture, country} from "../contract";
+import {formatter, BaseFormatter} from '../base';
 
 
 @formatter("PropertyNameFormatter", "CA")
-export default class PropertyNameFormatterCanImpl implements PropertyNameFormatter{
-    constructor(){}
+export default class PropertyNameFormatterCanImpl extends BaseFormatter implements PropertyNameFormatter{
+    constructor(culture:culture, country:country){
+        super(culture, country);
+    }
     format(data:PropertyNameData){
-        return `${data.propertyGroupName} - ${data.propertyName} - CA`;
+        return `PropertyNameFormatter:  ${data.propertyGroupName} - ${data.propertyName} - ${this._country}`;
     }
 }

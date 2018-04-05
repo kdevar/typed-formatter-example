@@ -7,6 +7,6 @@ export default class PropertyNameFormatterImpl extends BaseFormatter implements 
         super(culture, country)
     }
     format(data:PropertyNameData){
-        return `${data.propertyGroupName} - ${data.propertyName} - ${this._country}`;
+        return `PropertyNameFormatter:  ${data.propertyGroupName} - ${data.propertyName} - ${this._country}`;
     }
 }

@@ -12,7 +12,7 @@ arrify@^1.0.0:
   version "1.0.1"
   resolved "http://npm.prd.costargroup.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
 
-chalk@^2.3.0:
+chalk@^2.3.0, chalk@^2.3.2:
   version "2.3.2"
   resolved "http://npm.prd.costargroup.com/chalk/-/chalk-2.3.2.tgz#250dc96b07491bfd601e648d66ddf5f60c7a5c65"
   dependencies:

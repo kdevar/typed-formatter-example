@@ -1,4 +1,6 @@
 import FormatterFactory from "./formatters";
+import chalk from 'chalk';
+
 
 let propertyNameUSFormat = FormatterFactory.PropertyNameFormatter("en-CA", "US").format({
     propertyGroupName: "test",
@@ -10,6 +12,6 @@ let propertyNameCAFormat = FormatterFactory.PropertyNameFormatter("en-CA", "CA")
     propertyName: "super"
 });
 
-console.log(propertyNameUSFormat);
-console.log(propertyNameCAFormat);
+console.log(chalk.blue.bold(propertyNameUSFormat));
+console.log(chalk.blue.bold(propertyNameCAFormat));
 
