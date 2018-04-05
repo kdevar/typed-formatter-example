@@ -13,6 +13,3 @@ let aCa = FormatterFactory.PropertyNameFormatter("en-CA", "CA").format({
 console.log(aUs);
 console.log(aCa);
 
-
-
-

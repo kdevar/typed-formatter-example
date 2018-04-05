@@ -21,7 +21,7 @@ function getFormatter<K extends keyof IFormatters>(i:K):any{
         if(!formatter){
             throw new Error(`Formatter: ${i} has not been implemented`);
         }
-        return new formatter();                
+        return new formatter(culture, country);                
     }   
 }
 
@@ -55,7 +55,7 @@ function getFormatter<K extends keyof IFormatters>(i:K):any{
         if(!formatter){
             throw new Error(`Formatter ${i} has not been implemented`);
         }
-        return new formatter();                
+        return new formatter(culture, country);                
     }   
 }
 
